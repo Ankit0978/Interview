@@ -1,0 +1,56 @@
+.chart-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .chart {
+    max-width: 400px;
+    max-height: 400px;
+    margin-bottom: 20px;
+  }
+  /* DashboardComponent.css */
+
+.chart-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .chart {
+    width: 100%; /* Take up full width by default */
+  
+    @media (min-width: 768px) {
+      /* Adjust styles for tablets */
+      width: calc(50% - 20px); /* Two charts per row with some margin */
+    }
+  
+    @media (min-width: 1024px) {
+      /* Adjust styles for desktops */
+      width: calc(33.33% - 20px); /* Three charts per row with some margin */
+    }
+  }
+  
+  /* Additional styles for better layout and spacing */
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .chart-container {
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 767px) {
+    /* Additional styles for mobile devices */
+    .chart {
+      margin-bottom: 20px;
+    }
+  }
+  
